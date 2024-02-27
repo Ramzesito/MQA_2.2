@@ -118,7 +118,7 @@ class ChangeTextTest {
 
         val textBefore = device.findObject(By.res(packageName, "textToBeChanged")).text
 
-        device.findObject(By.res(packageName, "userInput")).text = "    "
+        device.findObject(By.res(packageName, "userInput")).text = "     "
         device.findObject(By.res(packageName, "buttonChange")).click()
 
         val result = device.findObject(By.res(packageName, "textToBeChanged")).text
